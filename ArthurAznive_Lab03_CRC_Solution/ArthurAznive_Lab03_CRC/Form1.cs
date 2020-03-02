@@ -1,4 +1,12 @@
-﻿using System;
+﻿/*
+ * HEADER 
+ * PROGRAMMER: Arthur W. Aznive Jr.
+ * DATE: 2/25/2020
+ * DESCRIPTION: CRC Code Calculator G.U.I
+ * 
+ */
+
+using System;
 using System.IO;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,7 +22,7 @@ namespace ArthurAznive_Lab03_CRC
 {
     public partial class MainForm : Form
     {
-        crcClass crc = new CRC_Class.crcClass();
+       
         public MainForm()
         {
             InitializeComponent();
@@ -66,24 +74,57 @@ namespace ArthurAznive_Lab03_CRC
             else
             {
                 //string to byte array
-                String inString;    // references the user input text string
+                String userInput;    // references the user input text string
                 
-                byte[] byteArr;     // an array of bytes
+                byte[] byteArray;     // an array of bytes
+
+
 
                 // ok to convert from string to byte array and back
                 // initalize the aString array and clear inputBox text window
-                inString = richTextBoxFileContent.Text;
-                
+                userInput = richTextBoxFileContent.Text;
+
+                int newLength = userInput.Length + 1;
 
                 // instantiate array 1 byte larger than string size
-                byteArr = new byte[inString.Length + 1];
+                byteArray = new byte[newLength];
 
                 // transfer string into byte array using Encoding object
-                Encoding.ASCII.GetBytes(inString, 0, inString.Length, byteArr, 0);
+                Encoding.ASCII.GetBytes(userInput, 0, userInput.Length, byteArray, 0);
 
-                crc.calcCRC(byteArr);
+                //create an instance of the class. with the data.
+                crcClass crc = new CRC_Class.crcClass(byteArray);
+
+                //get the crc code.
+                byte crcCode = crc.calcCRC(byteArray);
+
+                Console.WriteLine("CRC: {0:X2}", crcCode);
+
+                /*Display
+
+                //decResultTxtBox
+                //binaryResultTxtBox
+                //hexResultTxtBox
+                //octalResultTxtBox
+
+                */
+
+                int _decimal = crcCode; //CRC Code is stored in an integer data type.
+                decResultTxtBox.Text = _decimal.ToString(); //convert the int to a string.
+
+
+                int _hexadecimal = crcCode; //Store the CRC Code in an integer data type.
+                hexResultTxtBox.Text = _hexadecimal.ToString("X"); //ToString("X") will convert the int _hexadecimal
+
+
+                octalResultTxtBox.Text = Convert.ToString(_decimal, 8); //Octal
+
                 
+
+
+
             }
+
         }
     }
 }
