@@ -112,10 +112,8 @@ namespace ArthurAznive_Lab03_CRC
                 int _decimal = crcCode; //CRC Code is stored in an integer data type.
                 decResultTxtBox.Text = _decimal.ToString(); //convert the int to a string.
 
-
                 int _hexadecimal = crcCode; //Store the CRC Code in an integer data type.
                 hexResultTxtBox.Text = _hexadecimal.ToString("X"); //ToString("X") will convert the int _hexadecimal
-
 
                 octalResultTxtBox.Text = Convert.ToString(_decimal, 8); //Octal
 

@@ -14,7 +14,7 @@ namespace CRC_class
         const byte MASK = 0x80;
 
         private byte[] _byteArray;   // stores data to receive the CRC calculation
-        private byte _crc;
+        //private byte _crc;
         private byte _remainder;
         private byte _reg;
         private int _length;
@@ -77,9 +77,8 @@ namespace CRC_class
                     {
                         _reg = (byte)(_reg ^ POLY);
                         _remainder = (byte)0;
-                        _crc = _reg;
+                        //_crc = _reg;
                     }
-
 
                     if ((_reg & MASK) == MASK)
                     {
@@ -91,10 +90,7 @@ namespace CRC_class
                 }
             }
 
-
             return _reg;
         }
-
-
     }
 }
