@@ -4,3 +4,9 @@ T:\ArthurA222\Lab03 Arthur Solution\ArthurAznive_Lab03_CRC_Solution\CRC_Class\ob
 T:\ArthurA222\Lab03 Arthur Solution\ArthurAznive_Lab03_CRC_Solution\CRC_Class\obj\Debug\CRC_Class.csproj.CoreCompileInputs.cache
 T:\ArthurA222\Lab03 Arthur Solution\ArthurAznive_Lab03_CRC_Solution\CRC_Class\obj\Debug\CRC_Class.dll
 T:\ArthurA222\Lab03 Arthur Solution\ArthurAznive_Lab03_CRC_Solution\CRC_Class\obj\Debug\CRC_Class.pdb
+D:\GitHub\CRC-Calculator-GUI\ArthurAznive_Lab03_CRC_Solution\CRC_Class\bin\Debug\CRC_Class.dll
+D:\GitHub\CRC-Calculator-GUI\ArthurAznive_Lab03_CRC_Solution\CRC_Class\bin\Debug\CRC_Class.pdb
+D:\GitHub\CRC-Calculator-GUI\ArthurAznive_Lab03_CRC_Solution\CRC_Class\obj\Debug\CRC_Class.csprojAssemblyReference.cache
+D:\GitHub\CRC-Calculator-GUI\ArthurAznive_Lab03_CRC_Solution\CRC_Class\obj\Debug\CRC_Class.csproj.CoreCompileInputs.cache
+D:\GitHub\CRC-Calculator-GUI\ArthurAznive_Lab03_CRC_Solution\CRC_Class\obj\Debug\CRC_Class.dll
+D:\GitHub\CRC-Calculator-GUI\ArthurAznive_Lab03_CRC_Solution\CRC_Class\obj\Debug\CRC_Class.pdb

@@ -11,3 +11,16 @@ T:\ArthurA222\Lab03 Arthur Solution\ArthurAznive_Lab03_CRC_Solution\ArthurAznive
 T:\ArthurA222\Lab03 Arthur Solution\ArthurAznive_Lab03_CRC_Solution\ArthurAznive_Lab03_CRC\bin\Debug\CRC_Class.dll
 T:\ArthurA222\Lab03 Arthur Solution\ArthurAznive_Lab03_CRC_Solution\ArthurAznive_Lab03_CRC\bin\Debug\CRC_Class.pdb
 T:\ArthurA222\Lab03 Arthur Solution\ArthurAznive_Lab03_CRC_Solution\ArthurAznive_Lab03_CRC\obj\Debug\ArthurAznive_Lab03_CRC.csproj.CopyComplete
+D:\GitHub\CRC-Calculator-GUI\ArthurAznive_Lab03_CRC_Solution\ArthurAznive_Lab03_CRC\bin\Debug\ArthurAznive_Lab03_CRC.exe.config
+D:\GitHub\CRC-Calculator-GUI\ArthurAznive_Lab03_CRC_Solution\ArthurAznive_Lab03_CRC\bin\Debug\ArthurAznive_Lab03_CRC.exe
+D:\GitHub\CRC-Calculator-GUI\ArthurAznive_Lab03_CRC_Solution\ArthurAznive_Lab03_CRC\bin\Debug\ArthurAznive_Lab03_CRC.pdb
+D:\GitHub\CRC-Calculator-GUI\ArthurAznive_Lab03_CRC_Solution\ArthurAznive_Lab03_CRC\bin\Debug\CRC_Class.dll
+D:\GitHub\CRC-Calculator-GUI\ArthurAznive_Lab03_CRC_Solution\ArthurAznive_Lab03_CRC\bin\Debug\CRC_Class.pdb
+D:\GitHub\CRC-Calculator-GUI\ArthurAznive_Lab03_CRC_Solution\ArthurAznive_Lab03_CRC\obj\Debug\ArthurAznive_Lab03_CRC.csprojAssemblyReference.cache
+D:\GitHub\CRC-Calculator-GUI\ArthurAznive_Lab03_CRC_Solution\ArthurAznive_Lab03_CRC\obj\Debug\ArthurAznive_Lab03_CRC.MainForm.resources
+D:\GitHub\CRC-Calculator-GUI\ArthurAznive_Lab03_CRC_Solution\ArthurAznive_Lab03_CRC\obj\Debug\ArthurAznive_Lab03_CRC.Properties.Resources.resources
+D:\GitHub\CRC-Calculator-GUI\ArthurAznive_Lab03_CRC_Solution\ArthurAznive_Lab03_CRC\obj\Debug\ArthurAznive_Lab03_CRC.csproj.GenerateResource.cache
+D:\GitHub\CRC-Calculator-GUI\ArthurAznive_Lab03_CRC_Solution\ArthurAznive_Lab03_CRC\obj\Debug\ArthurAznive_Lab03_CRC.csproj.CoreCompileInputs.cache
+D:\GitHub\CRC-Calculator-GUI\ArthurAznive_Lab03_CRC_Solution\ArthurAznive_Lab03_CRC\obj\Debug\ArthurAznive_Lab03_CRC.csproj.CopyComplete
+D:\GitHub\CRC-Calculator-GUI\ArthurAznive_Lab03_CRC_Solution\ArthurAznive_Lab03_CRC\obj\Debug\ArthurAznive_Lab03_CRC.exe
+D:\GitHub\CRC-Calculator-GUI\ArthurAznive_Lab03_CRC_Solution\ArthurAznive_Lab03_CRC\obj\Debug\ArthurAznive_Lab03_CRC.pdb
