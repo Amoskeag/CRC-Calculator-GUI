@@ -1,62 +1,100 @@
-﻿/*
- *  HEADER
- *  PROGRAMMER: Arthur W. Aznive Jr.
- *  DATE: 2/20/2020
- *  FILE: CRC_Class 
- *  DESCRIPTION: 
- *  
- */
-
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
 
-namespace CRC_Class
+namespace CRC_class
 {
 
-    public class crcClass
+    public class CRC
     {
-        public crcClass()
+        const short POLY = 0x125;
+        const byte MASK = 0x80;
+
+        private byte[] _byteArray;   // stores data to receive the CRC calculation
+        private byte _crc;
+        private byte _remainder;
+        private byte _reg;
+        private int _length;
+        private byte[] _copy;
+
+
+        public CRC()
         {
-            //Default Constructor 
+            _remainder = 0x0;
+        }
 
-        }//End Default Constructor
-
-        //Algorithm constants
-        const ushort POLY = 0x125;
-        const ushort MASK = 0x80;
-
-        public crcClass(byte[] array)
+        public CRC(char[] anArray) //convert from a character array to byte
         {
-            // stores data to receive the CRC calculation this is a
-            // copy of the original array, but it is not a reference,
-            // it is separate from the original with the same data.
+            _length = anArray.Length;
 
-            byte[] byteArray = new byte[array.Length];
+            _byteArray = new byte[_length];
+            _copy = new byte[_length];
 
-            //Fill the array. from the original array.
-            for( int i = 0; i < array.Length - 1; i++)
+            for (int i = 0; i < _length; i++) //putting the values into the class variable
             {
-                byteArray[i] = array[i];
+                _byteArray[i] = Convert.ToByte(anArray[i]);
+                _copy[i] = Convert.ToByte(anArray[i]); //using a copy
             }
 
-        }//END crcClass byte Array Constructor
+        }
 
-
-        public byte calcCRC(byte[] byteArray)
+        public CRC(byte[] anArray)// an array
         {
-            //Returns the calculated CRC value.
+            _length = anArray.Length;
 
-            // find CRC 
-            for (int i = 0; i < 16; i++)
+            _byteArray = new byte[_length];
+            _copy = new byte[_length];
+
+            for (int i = 0; i < _length; i++) //putting the values into the class variable
             {
+                _byteArray[i] = anArray[i];
+                _copy[i] = anArray[i]; //using a copy
             }
-                return 0;
+        }
 
-        }//END CalcCRC
+        public byte createCRC()
+        {
+            _reg = (byte)0;
+
+            //for the length of the array, do this.
+            for (int i = 0; i < _length; i++)
+            {
+
+                for (int b = 0; b < 8; b++)
+                {
+
+                    _reg <<= 1; // shift values
+
+                    if ((_copy[i] & MASK) == MASK) // 1 bit found - nothing to do if zero appended
+                    {
+                        _reg = (byte)(_reg | 1); // 0000 0001
+                    }
+
+                    if (_remainder == 1)
+                    {
+                        _reg = (byte)(_reg ^ POLY);
+                        _remainder = (byte)0;
+                        _crc = _reg;
+                    }
+
+
+                    if ((_reg & MASK) == MASK)
+                    {
+                        _remainder = 1;
+                    }
+
+                    _copy[i] <<= 1;
+
+                }
+            }
+
+
+            return _reg;
+        }
+
+
     }
-        
-}//END Namespace CRC_Class
+}

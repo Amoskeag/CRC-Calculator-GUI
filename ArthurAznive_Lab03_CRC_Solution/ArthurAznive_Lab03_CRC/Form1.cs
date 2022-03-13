@@ -16,7 +16,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using CRC_Class;
+using CRC_class;
 
 namespace ArthurAznive_Lab03_CRC
 {
@@ -93,10 +93,10 @@ namespace ArthurAznive_Lab03_CRC
                 Encoding.ASCII.GetBytes(userInput, 0, userInput.Length, byteArray, 0);
 
                 //create an instance of the class. with the data.
-                crcClass crc = new CRC_Class.crcClass(byteArray);
+                CRC crc = new CRC_class.CRC(byteArray);
 
                 //get the crc code.
-                byte crcCode = crc.calcCRC(byteArray);
+                byte crcCode = crc.createCRC();
 
                 Console.WriteLine("CRC: {0:X2}", crcCode);
 
@@ -119,12 +119,7 @@ namespace ArthurAznive_Lab03_CRC
 
                 octalResultTxtBox.Text = Convert.ToString(_decimal, 8); //Octal
 
-                
-
-
-
             }
-
         }
     }
 }
