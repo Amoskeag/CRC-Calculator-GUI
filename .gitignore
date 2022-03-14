@@ -1,0 +1,8 @@
+# Build artifacts
+**Debug/
+**sqlite3
+
+# Binaries/misc artifacts
+*.exe
+*.bin
+*.suo
