@@ -1,6 +1,8 @@
+# Dev artifacts
+**.vs/
+
 # Build artifacts
 **Debug/
-**sqlite3
 
 # Binaries/misc artifacts
 *.exe
