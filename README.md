@@ -1,1 +1,1 @@
-"# CRC-Calculator-GUI" 
+CRC-Calculator-GUI
